@@ -15,6 +15,8 @@ div.container{
     display: flex;
 }
 
+/************ left section *************/
+
 section.background{
     background-image: url("attachments/james-donaldson-toPRrcyAIUY-unsplash.jpg");
     background-size: cover;
@@ -60,8 +62,95 @@ div.credit a{
     color: #fff;
 }
 
+/***************header section******************/
+
 section.formContainer{
-    background-color: #fff;
+    background-color: #f9fafb;
     width: 60%;
     height: 100vh;
+    display: flex;
+    flex-flow: column nowrap;
+    /* align-items: center; */
+    justify-content: center;
+}
+
+div.formHeader{
+    font-family: sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+    padding-right: 7em;
+    padding-bottom: 2em;
+    padding: 0 6em 2em 3em;
+}
+
+div.formHeader p.lowerP{
+    margin-top: 1em;
+}
+
+/****************form section*******************/
+div.formBody{
+    background-color: #fff;
+    padding-top: 1em;
+    padding: 2em 6em 1em 3em;
+    box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.45);
+}
+
+div.formBody h1{
+    margin-bottom: 1em;
+}
+
+div.formInput{
+    display: flex;
+    flex-flow: row wrap;
+}
+
+div.formInput div.formCell{
+    display: flex;
+    margin: 0 4em 1em 0;
+    flex-direction: column;
+}
+
+div.formCell label{
+    font-family: sans-serif;
+    font-weight: 600;
+    font-size: 12px;
+    letter-spacing: 0.5px;
+}
+
+div.formCell input{
+    border: 1px solid #E5E7EB;
+    border-radius: 4px;
+    padding: 4px;
+}
+
+div.formCell input:focus{
+    outline: none;
+    border: 1px solid #2e5bdb;
+    box-shadow: 0px 1px 2px 0px rgba(0,0,0,0.5);
+}
+
+div.formCell input.error{
+    border: 1px solid #d06666;
+}
+
+form button{
+    padding: 1em 3em;
+    color: white;
+    background-color: #11c6d0;
+    border-radius: 7px;
+    margin: 30px 48px;
+}
+
+form button:hover{
+    cursor: pointer;
+    filter: brightness(90%);
+}
+
+div.logIn{
+    margin: 0 48px;
+}
+
+div.logIn a{
+    text-decoration: none;
+    color: #11c6d0;
 }
