@@ -1,0 +1,67 @@
+@font-face {
+    font-family: Norse-Bold;
+    src: url(attachments/Norse-Bold.otf);
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+div.container{
+    display: flex;
+}
+
+section.background{
+    background-image: url("attachments/james-donaldson-toPRrcyAIUY-unsplash.jpg");
+    background-size: cover;
+    width: 40%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+div.logo{
+    background-color: rgba(0,0,0,.5);
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+div.logoImg{
+    width: 20%;
+}
+div.logoImg img{
+    width: 100%;
+}
+
+h1.logoText{
+    font-family: Norse-Bold, sans-serif;
+    color: #fff;
+    text-align: center;
+    font-size: 60px;
+}
+
+div.credit{
+    position: absolute;
+    margin: auto;
+    bottom: 15px;
+    color: #fff;
+}
+
+div.credit a{
+    color: #fff;
+}
+
+section.formContainer{
+    background-color: #fff;
+    width: 60%;
+    height: 100vh;
+}
