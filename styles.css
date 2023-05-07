@@ -13,6 +13,7 @@
 
 div.container{
     display: flex;
+    position: relative;
 }
 
 /************ left section *************/
@@ -22,6 +23,7 @@ section.background{
     background-size: cover;
     width: 40%;
     height: 100vh;
+    position: fixed;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -67,8 +69,8 @@ div.credit a{
 section.formContainer{
     background-color: #f9fafb;
     width: 60%;
-    height: 100vh;
     display: flex;
+    margin-left: 40%;
     flex-flow: column nowrap;
     /* align-items: center; */
     justify-content: center;
@@ -88,11 +90,23 @@ div.formHeader p.lowerP{
 }
 
 /****************form section*******************/
+div.formWrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
 div.formBody{
-    background-color: #fff;
-    padding-top: 1em;
-    padding: 2em 6em 1em 3em;
+    background-color: #d3d3d3;
+    width: 70%;
+    padding: 4rem;
     box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.45);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 div.formBody h1{
@@ -100,14 +114,18 @@ div.formBody h1{
 }
 
 div.formInput{
+    flex-basis: auto;
+
     display: flex;
     flex-flow: row wrap;
+    /* gap: 10px; */
 }
 
-div.formInput div.formCell{
+div.formCell{
     display: flex;
-    margin: 0 4em 1em 0;
+    margin: .5em 1em;
     flex-direction: column;
+    width: 100%;
 }
 
 div.formCell label{
@@ -117,11 +135,31 @@ div.formCell label{
     letter-spacing: 0.5px;
 }
 
+
 div.formCell input{
     border: 1px solid #E5E7EB;
     border-radius: 4px;
     padding: 4px;
+    width: 100%;
 }
+
+div.nameCell{
+    flex-direction: row;
+    gap: 10px;
+}
+
+div.first,
+div.last{
+
+    display: flex;
+    flex-direction: column;
+}
+
+div.first input,
+div.last input{
+    width: 100%;
+}
+
 
 div.formCell input:focus{
     outline: none;
