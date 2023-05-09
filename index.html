@@ -1,95 +1,113 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Sign up</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="main.js" defer></script>
+  </head>
 
-<body>
+  <body>
     <div class="container">
-        <section class="background">
-            <div class="logo">
-                <div class="logoImg">
-                    <img src="attachments/logo.png" alt="Logo image">
+      <section class="background">
+        <div class="logo">
+          <div class="logoImg">
+            <img src="attachments/logo.png" alt="Logo image" />
+          </div>
+          <h1 class="logoText">Travel the wolrd!</h1>
+        </div>
+        <div class="credit">
+          Photo by
+          <a href="https://unsplash.com/@jim_dons" target="_blank"
+            >James Donaldson</a
+          >
+          on <a href="https://unsplash.com/" target="_blank">unsplash</a>
+        </div>
+      </section>
+      <section class="formContainer">
+        <div class="formHeader">
+          <p>
+            This is not a real service! It's better to see something once than
+            to hear about it a thousand times. Sign up now and start seeing the
+            world! If not now, then when?
+          </p>
+          <p class="lowerP">you know you want to</p>
+        </div>
+        <form action="" method="post" novalidate>
+          <div class="formWrapper">
+            <div class="formBody">
+              <div class="formTitle">
+                <h1 class="formTitle">Let's do this!</h1>
+              </div>
+              <div class="formInput">
+                <div class="formCell nameCell">
+                  <div class="first">
+                    <label for="name">FIRST NAME</label>
+                    <input type="text" id="name" name="name" required />
+                    <span class="error"></span>
+                  </div>
+                  <div class="last">
+                    <label for="lname">LAST NAME</label>
+                    <input type="text" id="lname" name="lname" required />
+                    <span class="error"></span>
+                  </div>
                 </div>
-                <h1 class="logoText">Travel the wolrd!</h1>
-            </div>
-            <div class="credit">
-                Photo by <a href="https://unsplash.com/@jim_dons" target="_blank">James Donaldson</a>
-                on <a href="https://unsplash.com/" target="_blank">unsplash</a>
-            </div>
-        </section>
-        <section class="formContainer">
-            <div class="formHeader">
-                <p>
-                    This is not a real service! It's better to see something once than to hear about it a thousand
-                    times.
-                    Sign up now and start seeing the world! If not now, then when?
-                </p>
-                <p class="lowerP">you know you want to</p>
-            </div>
-            <form action="" method="post">
-                <div class="formWrapper">
-                    <div class="formBody">
-                        <div class="formTitle">
-                            <h1 class="formTitle">Let's do this!</h1>
-                        </div>
-                        <div class="formInput">
-                            <div class="formCell nameCell">
-                                <div class="first">
-                                    <label for="name">FIRST NAME</label>
-                                    <input type="text" id="name" name="name" required>
-                                </div>
-                                <div class="last">
-                                    <label for="lname">LAST NAME</label>
-                                    <input type="text" id="lname" name="lname" required>
-                                </div>
-                            </div>
-                            <div class="formCell">
-                                <label for="email">EMAIL</label>
-                                <input type="email" id="email" name="email" required>
-                            </div>
-                            <div class="formCell">
-                                <label for="phone">PHONE NUMBER</label>
-                                <input type="tel" id="phone" name="phone" required>
-                            </div>
-                            <div class="formCell">
-                                <label for="country">COUNTRY:</label>
-                                <select id="country" name="country">
-                                    <option value="de">Germany</option>
-                                    <option value="fr">France</option>
-                                    <option value="uk">England</option>
-                                </select>
-                            </div>
-                            <div class="formCell">
-                                <label for="zipcode">ZIP CODE</label>
-                                <input type="password" id="password" name="password" required>
-                            </div>
-                            <div class="formCell">
-                                <label for="password">PASSWORD</label>
-                                <input type="password" id="password" name="password" required>
-                            </div>
-                            <div class="formCell">
-                                <label for="confirmPass">CONFIRM PASSWORD</label>
-                                <input type="password" id="confirmPass" name="confirmPass" required>
-                            </div>
-                        </div>
-                    </div>
-                    <button type="submit">Create Account</button>
-                    <div class="logIn">
-                        <p>Already have an account? <a href="#">Log in</a></p>
-                    </div>
+                <div class="formCell">
+                  <label for="email">EMAIL</label>
+                  <input type="email" id="email" name="email" required />
+                  <span class="error"></span>
                 </div>
-            </form>
-        </section>
+                <div class="formCell">
+                  <label for="phone">PHONE NUMBER</label>
+                  <input type="tel" id="phone" name="phone" required />
+                  <span class="error"></span>
+                </div>
+                <div class="formCell">
+                  <label for="country">COUNTRY:</label>
+                  <select id="country" name="country">
+                    <option value="de">Germany</option>
+                    <option value="fr">France</option>
+                    <option value="gb">England</option>
+                  </select>
+                  <span class="error"></span>
+                </div>
+                <div class="formCell">
+                  <label for="zipcode">ZIP CODE</label>
+                  <input type="text" id="zipcode" name="zipcode" required />
+                  <span class="error zip"></span>
+                </div>
+                <div class="formCell">
+                  <label for="password">PASSWORD</label>
+                  <input
+                    type="password"
+                    id="password"
+                    name="password"
+                    required
+                  />
+                  <span class="error"></span>
+                </div>
+                <div class="formCell">
+                  <label for="confirmPass">CONFIRM PASSWORD</label>
+                  <input
+                    type="password"
+                    id="confirmPass"
+                    name="confirmPass"
+                    required
+                  />
+                  <span class="error"></span>
+                </div>
+              </div>
+            </div>
+            <button type="submit">Create Account</button>
+            <div class="logIn">
+              <p>Already have an account? <a href="#">Log in</a></p>
+            </div>
+          </div>
+        </form>
+      </section>
     </div>
-    <script>
-
-    </script>
-</body>
-
+    <script></script>
+  </body>
 </html>
